@@ -78,8 +78,8 @@
     <script>
         document.addEventListener("contextmenu", (e) => e.preventDefault());
         function checkAnswer() {
-            const input = document.getElementById('answer').value;
-            if (input === "Its LeviOsa, not LevioSA!") {
+            const input = document.getElementById('answer').value.trim().toLowerCase();
+            if (input === "this is the parsel mouth’s speech") {
                 alert("Correct! Proceeding to the next step.");
                 window.location.href = "step4.html";
             } else {
@@ -93,8 +93,8 @@
         <div class="welcome">✨ Well done! You've advanced to Step 3! ✨</div>
         <div class="puzzle">
             <p><strong>Clue:</strong></p>
-            <p>Nyx QjznTxf, sty QjzntXF!</p>
-            <p><strong>Hint:</strong> "Slytherin’s heir could understand, shift back five steps to make it grand."</p>
+            <p>"Wklv lv wkh sduvho prxwk’v vshhfk."</p>
+            <p><strong>Hint:</strong> "Slytherin’s heir could understand, shift back three steps to make it grand."</p>
             <input type="text" id="answer" placeholder="Enter your answer here">
             <br>
             <button onclick="checkAnswer()">Submit</button>
